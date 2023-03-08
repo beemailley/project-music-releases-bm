@@ -1,11 +1,10 @@
 import React from 'react';
-import { AlbumList } from './AlbumList';
 
-export const Album = (props) => {
+const Album = ({ albumName }) => {
   return (
-    <article className="album-title">
-        <p>{props.albumDetails.name}</p>
-    </article>
-)
-}
+    <p>{albumName}</p>
+  )
+};
+
+export default Album; /* If you only have one function to export, use "export default" */
 
