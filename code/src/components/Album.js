@@ -1,8 +1,11 @@
 import React from 'react';
 
-const Album = ({ albumName }) => {
+const Album = ({ coverImage, albumName }) => {
   return (
-    <p>{albumName}</p>
+    <div>
+      <img src={coverImage} alt="album cover" />
+      {albumName}
+    </div>
   )
 };
 
