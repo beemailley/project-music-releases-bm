@@ -1,7 +1,3 @@
-/* .album-cover:hover {
-    opacity: .75;
-} */
-
 a {
     text-decoration: none;
 }
@@ -28,11 +24,11 @@ a:hover {
     fill: white;
   }
 
-  .album-cover:hover {
-    filter: brightness(50%);
+  .album-container:hover > .album-cover {
+    filter: brightness(40%);
   }
   
-  .album-cover:hover + .icons {
+  .album-container:hover > .icons {
     display: flex;
     width: 100%;
     position: absolute;
@@ -42,17 +38,8 @@ a:hover {
     fill: white;  
   }
 
-  .icons:hover {
-    display: flex;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    justify-content: space-evenly;
-    top: 40%;
-  }
-
   .play:hover {
-    transform: scale(1.2);
-    transition: transform 0.5s;
+    transform: scale(1.4);
+    transition: transform 0.3s;
   }
 
