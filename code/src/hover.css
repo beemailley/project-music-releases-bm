@@ -1,0 +1,11 @@
+.album-cover:hover {
+    opacity: .75;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
