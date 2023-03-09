@@ -1,11 +1,18 @@
 import React from 'react';
+import AlbumDetails from './AlbumDetails'
 
-const Album = ({ coverImage, albumName }) => {
+const Album = (props) => {
   return (
-    <div>
-      <img src={coverImage} alt="album cover" />
-      {albumName}
-    </div>
+    <section>
+      {props.albumData.albums.items.map((singleAlbum) => {
+        return (
+          <AlbumDetails key={singleAlbum.id} albumInfo={singleAlbum} />
+        
+        )
+
+      })}
+      
+    </section>
   )
 };
 
