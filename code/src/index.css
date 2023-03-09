@@ -11,7 +11,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: auto;
   background-color: black;
-
 }
 
 code {
@@ -38,13 +37,19 @@ h1 {
   padding: 10px;
   font-size: 24px;
   margin: 15px 12px 0 12px;
+  text-align: center;
+}
+
+header {
+  grid-column: 2 / span 2;
 }
 
 /* ALBUM COMPONENT */
 section {
+  grid-column: 2 / span 2;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 5px;
 }
 
 /* ALBUMDETAILS COMPONENT */
@@ -77,17 +82,94 @@ a {
   text-decoration: none;
 }
 
+/* PLAYLIST COMPONENT */
+.playlist-header {
+  grid-column: 1 / span 1;
+  color: #fff;
+  padding: 10px;
+  margin: 15px 12px 0 12px;
+  text-align: center;
+}
+
+.playlist-section {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.each-playlist {
+  margin: 10px;
+  align-items: center; 
+}
+
+.playlist-cover {
+  width: 100%;
+  height: auto;
+}
+
+.playlist-name {
+  font-size: 14px;
+  color: white;
+}
+
+.about-playlist {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+}
 
 /* RESPONSIVE DESIGN FOR TABLET */
 @media (min-width: 768px) {
   section {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  main {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+  }
+
+  .playlist-section {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 6;
+    min-height: 100vh;
+    display: flex;
+  }
+  
 }
 
 /* RESPONSIVE DESIGN FOR DESKTOP */
 @media (min-width: 1024px) {
   section {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+  }
+
+  .playlist-section {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 6;
+    min-height: 100vh;
+    display: flex;
   }
 }
