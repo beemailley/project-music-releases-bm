@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Header = ({title}) => {
+const Header = () => {
   return (
     <h1>
-        {title}
+        New albums & singles
     </h1>
   );
 }

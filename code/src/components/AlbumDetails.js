@@ -1,18 +1,18 @@
 import React from 'react';
-import Album from './Album';
+import Album from './Album.js';
 
 const AlbumDetails = (props) => {
   return (
     <article className="each-album">
-    <img src={props.albumInfo.images[1].url} alt="album cover"/>
-    <p className="album-title">{props.albumInfo.name}</p>
-    <div className="artist-names">
-      {props.albumInfo.artists.map((artistInfo) => {
-        return (
-          <span key={artistInfo.name}>{artistInfo.name} </span>
-        )
-      })}
-    </div>
+      <img className="album-cover" src={props.albumInfo.images[1].url} alt="album cover"/>
+      <a className="album-name" href={props.albumInfo.external_urls.spotify}>{props.albumInfo.name}</a>
+      <div>
+        {props.albumInfo.artists.map((artistInfo) => {
+          return (
+            <a className="artist-name" href={artistInfo.external_urls.spotify} key={artistInfo.name}>{artistInfo.name} </a>
+          )
+        })}
+      </div>
     </article>
   )
 };
