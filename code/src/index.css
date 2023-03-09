@@ -19,7 +19,7 @@ code {
     monospace;
 }
 
-/* This takes care of separation between artists */
+/* THIS TAKES CARE OF SEPARATION BETWEEN ARTISTS */
 .artist-name:not(:first-child, :last-child)::before {
   color: #a0a0a0;
   content: ", ";
@@ -31,12 +31,8 @@ code {
 }
 
 .artist-name:only-child::before {content: "";}
-/* */
 
-main {
-  margin: 0 auto;
-}
-
+/* HEADER COMPONENT */
 h1 {
   color: #fff;
   padding: 10px;
@@ -44,12 +40,14 @@ h1 {
   margin: 15px 12px 0 12px;
 }
 
+/* ALBUM COMPONENT */
 section {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
 }
 
+/* ALBUMDETAILS COMPONENT */
 .each-album {
   margin: 10px;
   align-items: center; 
@@ -65,6 +63,10 @@ section {
   color: #ffffff;
 }
 
+h2 {
+  margin: 0;
+}
+
 .artist-name {
   margin-top: 20px;
   font-size: 14px;
@@ -73,8 +75,8 @@ section {
 
 a {
   text-decoration: none;
-  font-family: 'Helvetica';
 }
+
 
 /* RESPONSIVE DESIGN FOR TABLET */
 @media (min-width: 768px) {
