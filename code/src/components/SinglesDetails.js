@@ -1,5 +1,4 @@
 import React from 'react';
-import Singles from './Singles.js';
 
 const SinglesDetails = (props) => {
   return (
@@ -26,4 +25,4 @@ const SinglesDetails = (props) => {
   )
 };
 
-export default SinglesDetails; /* If you only have one function to export, use "export default" */
+export default SinglesDetails;

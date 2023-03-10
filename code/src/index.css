@@ -45,7 +45,7 @@ header {
 }
 
 /* ALBUM COMPONENT */
-section {
+.album-container {
   grid-column: 2 / span 2;
   display: grid;
   grid-template-columns: 1fr;

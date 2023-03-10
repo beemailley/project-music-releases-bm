@@ -1,15 +1,5 @@
 import React from 'react';
 
-/* Less code alternative for the icons:
-
-  <img className="heart" src="./icons/heart.svg" alt="heart icon" />
-  <img className="play" src="./icons/play.svg" alt="play icon" />
-  <img className="dots" src="./icons/dots.svg" alt="dots icon" />
-
-(and then use "filter: invert(100%);" on icon class in CSS)
-
-*/
-
 const AlbumDetails = (props) => {
   return (
     <article className="each-album">
