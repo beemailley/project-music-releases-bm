@@ -1,8 +1,7 @@
 import React from 'react';
-import data from './data.json';
-import Header from './components/Header.js';
-import Album from './components/Album.js';
-
+import data from 'data.json';
+import Header from 'components/Header.js'; /* Imports "Header" component */
+import Album from 'components/Album.js'; /* Imports "Album" component */
 import Playlist from './components/Playlist.js';
 import json from './stretch-goal.json';
 
@@ -14,20 +13,7 @@ export const App = () => {
       <header>
         <Header />
       </header>
-      <section className="playlist-section">
-        <div className="playlist-header">
-          <h2>Playlists</h2>
-        </div>
-        {json.playlists.items.map((playlist) => {
-          return (
-            <Playlist
-              playlistCover={playlist.images[0].url}
-              playlistName={playlist.name}
-              playlistUrl={playlist.external_urls.spotify}
-              playlistAbout={playlist.description} />
-          )
-        })}
-      </section>
+      <Playlist playlistData={json}/>
       <Album albumData={data} />
     </main>
   )
