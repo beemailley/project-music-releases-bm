@@ -14,14 +14,14 @@ export const App = () => {
         <div className="contact-us">
           <button
             type="button"
-            class="contact"
-            onclick="window.open('https://bridgetmailley.com/');">
+            className="contact"
+            onClick={() => window.open('https://bridgetmailley.com/')}>
               Contact Bridget
           </button>
           <button
             type="button"
-            class="contact"
-            onclick="window.open('https://fannystenberg.netlify.app/');">
+            className="contact"
+            onClick={() => window.open('https://fannystenberg.netlify.app/')}>
               Contact Fanny
           </button>
         </div>
