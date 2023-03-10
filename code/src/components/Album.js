@@ -5,11 +5,11 @@ const Album = (props) => {
   return (
     <section>
       {props.albumData.albums.items.map((singleAlbum) => {
+        if (singleAlbum.album_type === 'album') {
         return (
-          <AlbumDetails
-            key={singleAlbum.id}
-            albumInfo={singleAlbum} />
+          <AlbumDetails key={singleAlbum.id} albumInfo={singleAlbum} />
         )
+      }
       })}
     </section>
   )

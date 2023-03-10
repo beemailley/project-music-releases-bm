@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Header = () => {
+const Header = ({ title }) => {
   return (
-    <h1>New albums & singles</h1>
+    <h1>
+        {title}
+    </h1>
   );
 }
 
