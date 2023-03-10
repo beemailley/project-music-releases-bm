@@ -11,13 +11,19 @@ export const App = () => {
   return (
     <main>
       <header>
-        <Header title="Albums and Singles" />
+        <Header title="New albums and singles" />
       </header>
       <Playlist playlistData={json}/>
-      <SectionHeader title="Singles" />
-      <Singles singlesData={data} />
-      <SectionHeader title="Albums" />
-      <Album albumData={data} />
+      <section className="AlbumsAndSingles-container">
+        <div className="singles-header">
+          <SectionHeader title="Singles" />
+        </div>
+        <Singles singlesData={data} />
+        <div className="albums-header">
+          <SectionHeader title="Albums" />
+        </div>
+        <Album albumData={data} />
+      </section>
     </main>
 
   )

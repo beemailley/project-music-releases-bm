@@ -45,8 +45,7 @@ header {
 }
 
 /* ALBUM COMPONENT */
-.album-container {
-  grid-column: 2 / span 2;
+.AlbumsAndSingles-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5px;
@@ -68,13 +67,6 @@ header {
   color: #ffffff;
 }
 
-h2 {
-  margin: 0;
-  color: #fff;
-  padding: 14px;
-  font-size: 20px;
-}
-
 .artist-name {
   margin-top: 20px;
   font-size: 14px;
@@ -84,6 +76,15 @@ h2 {
 a {
   text-decoration: none;
 }
+
+/* SINGLES & SECTIONHEADER COMPONENT */
+
+.SinglesAndAlbums {
+  color: #fff;
+  padding: 14px;
+  font-size: 20px;
+}
+
 
 /* PLAYLIST COMPONENT */
 .playlist-header {
@@ -140,13 +141,21 @@ a {
 
 /* RESPONSIVE DESIGN FOR TABLET */
 @media (min-width: 768px) {
-  section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   main {
     display: grid;
     grid-template-columns: 20% 1fr 1fr;
+  }
+
+  .AlbumsAndSingles-container {
+    grid-column: 2 / span 2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .singles-container, .singles-header {
+    grid-column: 1 / span 2;
+  }
+
+  .album-container, .album-header {
+    grid-column: 1 / span 2;
   }
 
   .playlist-section {
@@ -160,13 +169,21 @@ a {
 
 /* RESPONSIVE DESIGN FOR DESKTOP */
 @media (min-width: 1024px) {
-  section {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   main {
     display: grid;
     grid-template-columns: 20% 1fr 1fr;
+  }
+
+  .AlbumsAndSingles-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .singles-container, .singles-header {
+    grid-column: 1 / span 4;
+  }
+
+  .album-container, .album-header {
+    grid-column: 1 / span 4;
   }
 
   .playlist-section {
