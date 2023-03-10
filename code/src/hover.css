@@ -1,6 +1,11 @@
-a {
-    text-decoration: none;
+.contact:hover {
+  border: none;
+  background: white;
+  color: black;
+  font-weight: 550;
+
 }
+
 a:hover {
     text-decoration: underline;
 }

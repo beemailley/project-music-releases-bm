@@ -11,7 +11,21 @@ export const App = () => {
   return (
     <main>
       <header>
-        <Header title="New albums and singles" />
+        <div className="contact-us">
+          <button
+            type="button"
+            class="contact"
+            onclick="window.open('https://bridgetmailley.com/');">
+              Contact Bridget
+          </button>
+          <button
+            type="button"
+            class="contact"
+            onclick="window.open('https://fannystenberg.netlify.app/');">
+              Contact Fanny
+          </button>
+        </div>
+        <Header title="New albums & singles" />
       </header>
       <Playlist playlistData={json} />
       <section className="AlbumsAndSingles-container">

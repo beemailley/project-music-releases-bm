@@ -32,11 +32,11 @@ code {
 .artist-name:only-child::before {content: "";}
 
 /* HEADER COMPONENTS */
-h1 {
+.main-title {
   color: #fff;
   padding: 10px;
   font-size: 24px;
-  margin: 15px 12px 0 12px;
+  margin: 0 12px 0 12px;
   text-align: center;
 }
 
@@ -44,11 +44,33 @@ header {
   grid-column: 2 / span 2;
 }
 
+.contact-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 5px 12px 0 5px;
+}
+
+.contact {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 25px;
+  border: 2px solid white;
+  max-width: fit-content;
+  background: transparent;
+  color: white;
+  font-weight: 600;
+}
+
 /* ALBUM COMPONENT */
 .AlbumsAndSingles-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5px;
+}
+
+h2 {
+  margin: 0;
 }
 
 /* ALBUMDETAILS COMPONENT */
@@ -78,7 +100,6 @@ a {
 }
 
 /* SINGLES & SECTIONHEADER COMPONENT */
-
 .SinglesAndAlbums {
   color: #fff;
   padding: 14px;
@@ -103,6 +124,7 @@ a {
   background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 6s ease infinite;
+  padding-top: 30px;
 }
 
 @keyframes gradient {
