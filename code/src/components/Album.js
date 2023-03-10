@@ -3,7 +3,7 @@ import AlbumDetails from './AlbumDetails';
 
 const Album = (props) => {
   return (
-    <div className="album-container">
+    <div className="albums-container">
       {props.albumData.albums.items.map((singleAlbum) => {
         if (singleAlbum.album_type === 'album') {
           return (
