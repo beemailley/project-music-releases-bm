@@ -15,7 +15,8 @@ const Playlist = (props) => {
             <h2>
               <a className="playlist-name"
                 href={playlist.external_urls.spotify}>
-                {playlist.name}</a>
+                {playlist.name}
+                </a>
             </h2>
             <p className="about-playlist">{playlist.description}</p>
           </div>

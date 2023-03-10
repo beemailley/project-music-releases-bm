@@ -13,7 +13,7 @@ export const App = () => {
       <header>
         <Header title="New albums and singles" />
       </header>
-      <Playlist playlistData={json}/>
+      <Playlist playlistData={json} />
       <section className="AlbumsAndSingles-container">
         <div className="singles-header">
           <SectionHeader title="Singles" />
