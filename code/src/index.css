@@ -73,13 +73,13 @@ button:hover {
   animation: gradient 6s ease infinite;
 }
 
-.contact-B {
+.contact-F {
   position: fixed; /* Fixed/sticky position */
   right: 30px; 
   bottom: 20px; 
 }
 
-.contact-F {
+.contact-B {
   position: fixed; /* Fixed/sticky position */
   right: 160px; 
   bottom: 20px; 
