@@ -11,20 +11,6 @@ export const App = () => {
   return (
     <main>
       <header>
-        <div className="contact-us">
-          <button
-            type="button"
-            className="contact"
-            onClick={() => window.open('https://bridgetmailley.com/')}>
-              Contact Bridget
-          </button>
-          <button
-            type="button"
-            className="contact"
-            onClick={() => window.open('https://fannystenberg.netlify.app/')}>
-              Contact Fanny
-          </button>
-        </div>
         <Header title="New albums & singles" />
       </header>
       <Playlist playlistData={json} />
@@ -37,6 +23,20 @@ export const App = () => {
           <SectionHeader title="Albums" />
         </div>
         <Album albumData={data} />
+        <div className="contact-us">
+          <button
+            type="button"
+            className="contact-B"
+            onClick={() => window.open('https://bridgetmailley.com/')}>
+              Contact Bridget
+          </button>
+          <button
+            type="button"
+            className="contact-F"
+            onClick={() => window.open('https://fannystenberg.netlify.app/')}>
+              Contact Fanny
+          </button>
+        </div>
       </section>
     </main>
 

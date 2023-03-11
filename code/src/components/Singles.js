@@ -9,6 +9,8 @@ const Singles = (props) => {
           return (
             <SinglesDetails key={eachSingle.id} singleInfo={eachSingle} />
           )
+        } else {
+          return (null)
         }
       })}
     </div>

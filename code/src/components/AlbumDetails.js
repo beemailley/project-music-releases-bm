@@ -4,7 +4,8 @@ const AlbumDetails = (props) => {
   return (
     <article className="each-album">
       <div className="album-container">
-        <img className="album-cover"
+        <img
+          className="album-cover"
           src={props.albumInfo.images[1].url}
           alt="album cover" />
         <div className="icons">
@@ -14,7 +15,8 @@ const AlbumDetails = (props) => {
         </div>
       </div>
       <h2>
-        <a className="album-name"
+        <a
+          className="album-name"
           href={props.albumInfo.external_urls.spotify}>
           {props.albumInfo.name}
         </a>
@@ -22,7 +24,8 @@ const AlbumDetails = (props) => {
       <div>
         {props.albumInfo.artists.map((artistInfo) => {
           return (
-            <a className="artist-name"
+            <a
+              className="artist-name"
               href={artistInfo.external_urls.spotify}
               key={artistInfo.name}>
               {artistInfo.name}

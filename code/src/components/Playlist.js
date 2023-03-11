@@ -9,14 +9,16 @@ const Playlist = (props) => {
       {props.playlistData.playlists.items.map((playlist) => {
         return (
           <div className="each-playlist">
-            <img className="playlist-cover"
+            <img
+              className="playlist-cover"
               src={playlist.images[0].url}
               alt="playlist cover" />
             <h2>
-              <a className="playlist-name"
+              <a
+                className="playlist-name"
                 href={playlist.external_urls.spotify}>
                 {playlist.name}
-                </a>
+              </a>
             </h2>
             <p className="about-playlist">{playlist.description}</p>
           </div>

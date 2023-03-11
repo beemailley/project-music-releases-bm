@@ -9,6 +9,9 @@ const Album = (props) => {
           return (
             <AlbumDetails key={singleAlbum.id} albumInfo={singleAlbum} />
           )
+        } else {
+          return (null)
+          // must include an "else" statement in order to avoide ESList errors.
         }
       })}
     </div>

@@ -36,7 +36,7 @@ code {
   color: #fff;
   padding: 10px;
   font-size: 24px;
-  margin: 0 12px 0 12px;
+  margin: 45px 12px 0 12px;
   text-align: center;
 }
 
@@ -44,6 +44,7 @@ header {
   grid-column: 2 / span 2;
 }
 
+/* CONTACT BUTTONS */
 .contact-us {
   display: flex;
   flex-direction: row;
@@ -51,7 +52,7 @@ header {
   margin: 5px 12px 0 5px;
 }
 
-.contact {
+button {
   padding: 8px;
   margin: 5px;
   border-radius: 25px;
@@ -60,6 +61,28 @@ header {
   background: transparent;
   color: white;
   font-weight: 600;
+  opacity: .75;
+  z-index: 99; 
+}
+
+button:hover {
+  color:rgb(22, 22, 22);
+  opacity: 1;
+  background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+}
+
+.contact-B {
+  position: fixed; /* Fixed/sticky position */
+  right: 30px; 
+  bottom: 20px; 
+}
+
+.contact-F {
+  position: fixed; /* Fixed/sticky position */
+  right: 160px; 
+  bottom: 20px; 
 }
 
 /* ALBUM COMPONENT */
@@ -182,6 +205,7 @@ a {
     grid-row: 1 / span 6;
     min-height: 100vh;
     display: flex;
+    margin: 0 15px 0 0;
   }
   
 }
@@ -200,7 +224,7 @@ a {
 
   .singles-container, .albums-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .playlist-section {
